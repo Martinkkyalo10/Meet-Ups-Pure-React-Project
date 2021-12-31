@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import classes from "./MainNavigation.module.css";
 
 export default function MainNavigation() {
   return (
-    <header>
+    <header className={classes.header}>
       {/* logo section */}
       <div>Meetups</div>
       <nav>
@@ -14,7 +15,9 @@ export default function MainNavigation() {
           <li>
             <Link to="/new-meetup">Add New Meetup</Link>
           </li>
-          <Link to="/favorites">My Favorites</Link>
+          <li>
+            <Link to="/favorites">My Favorites</Link>
+          </li>
         </ul>
       </nav>
     </header>
